@@ -10,7 +10,7 @@ class OnboardingScreen2 extends StatelessWidget {
     return Scaffold(
       appBar :AppBar(
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back,size: FontManager.fontSize24,),
+          icon: const Icon(Icons.arrow_back_ios_new,size: FontManager.fontSize24,),
           onPressed: () {
             Navigator.pop(context);
           },

@@ -1,3 +1,4 @@
+import 'package:quick_kick/features/login/screen/login_screen.dart';
 import 'package:quick_kick/features/onboarding/screens/onboarding_screen1.dart';
 import 'package:quick_kick/features/onboarding/screens/onboarding_screen2.dart';
 import 'package:quick_kick/features/onboarding/screens/onboarding_screen3.dart';
@@ -9,6 +10,7 @@ class RoutesManager {
     RouteName.KonboardingScreen :(context) => OnboardingScreen(),
     RouteName.KonboardingScreen2 :(context) => OnboardingScreen2(),
     RouteName.KonboardingScreen3 :(context) => OnboardingScreen3(),
+    RouteName.KloginScreen :(context) => LoginScreen(),
   };
 }
 class RouteName{
@@ -16,4 +18,5 @@ class RouteName{
   static const String KonboardingScreen = "KonboardingScreen";
   static const String KonboardingScreen2 = "KonboardingScreen2";
   static const String KonboardingScreen3 = "KonboardingScreen3";
+  static const String KloginScreen = "KloginScreen3";
 }

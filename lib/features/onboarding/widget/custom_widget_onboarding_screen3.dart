@@ -5,10 +5,12 @@ import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/images_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
 import 'package:quick_kick/core/resources/width_manager.dart';
+import 'package:quick_kick/features/login/screen/login_screen.dart';
 
 
 class CustomWidgetOnboardingScreen3 extends StatelessWidget {
@@ -70,7 +72,7 @@ class CustomWidgetOnboardingScreen3 extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                
+                Navigator.pushNamed(context, RouteName.KloginScreen);
               },
               child: Text(
                 StringsManager.onboardingNextButton,
