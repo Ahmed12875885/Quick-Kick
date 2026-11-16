@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quick_kick/features/login/screen/login_screen.dart';
-import 'package:quick_kick/features/login/widget/social_login_section.dart';
-import 'package:quick_kick/features/onboarding/screens/onboarding_screen1.dart';
-import 'package:quick_kick/features/onboarding/screens/onboarding_screen2.dart';
-import 'package:quick_kick/features/onboarding/screens/onboarding_screen3.dart';
+import 'package:quick_kick/core/widgets/social_login_section.dart';
+import 'package:quick_kick/features/onboarding/screen/onboarding_screen1.dart';
+import 'package:quick_kick/features/onboarding/screen/onboarding_screen2.dart';
+import 'package:quick_kick/features/onboarding/screen/onboarding_screen3.dart';
 
 void main() {
   testWidgets(
@@ -26,18 +26,15 @@ void main() {
       expect(tester.takeException(), isNull);
       expect(find.byType(TextField), findsNWidgets(2));
       expect(find.byType(SocialLoginSection), findsOneWidget);
-      expect(find.byType(IconButton), findsNWidgets(3));
+      expect(find.byType(IconButton), findsNWidgets(5));
       final socialRow = find.descendant(
         of: find.byType(SocialLoginSection),
         matching: find.byType(Row),
       );
       expect(socialRow, findsOneWidget);
       expect(
-        find.descendant(
-          of: socialRow,
-          matching: find.byType(IconButton),
-        ),
-        findsNWidgets(2),
+        find.descendant(of: socialRow, matching: find.byType(IconButton)),
+        findsNWidgets(3),
       );
 
       await tester.ensureVisible(emailField);

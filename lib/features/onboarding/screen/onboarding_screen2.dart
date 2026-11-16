@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
-import 'package:quick_kick/features/onboarding/widget/custom_widget_onboarding_screen3.dart';
+import 'package:quick_kick/features/onboarding/widgets/custom_widget_onboarding_screen2.dart';
 
-class OnboardingScreen3 extends StatelessWidget {
-  const OnboardingScreen3({super.key});
+class OnboardingScreen2 extends StatelessWidget {
+  const OnboardingScreen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class OnboardingScreen3 extends StatelessWidget {
           },
         ),
       ),
-      body: const SingleChildScrollView(child: CustomWidgetOnboardingScreen3()),
+      body: const SingleChildScrollView(child: CustomWidgetOnboardingScreen2()),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
-import 'package:quick_kick/features/splash/screens/widget/custom_widget_splash.dart';
+import 'package:quick_kick/features/splash/widgets/custom_widget_splash.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
   @override

@@ -3,10 +3,10 @@ import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
-import 'package:quick_kick/core/resources/width_manager.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({super.key});
@@ -38,40 +38,43 @@ class LoginHeader extends StatelessWidget {
               ),
             ),
             SizedBox(height: VerticalManager.vertical10),
-                Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ElevatedButton(
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: ColorsManager.secondaryColor,
-                      fixedSize: Size(
-                        WidthManager.width156,
-                        HeightManager.height48,
-                      ),
+                      minimumSize: const Size(0, HeightManager.height48),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(SizeManager.size15),
                       ),
                     ),
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       StringsManager.login,
                       style: TextStyle(color: ColorsManager.primaryColor),
                     ),
                   ),
-                  SizedBox(width: WidthManager.width20),
-                  TextButton(
+                ),
+                Expanded(
+                  child: TextButton(
                     style: TextButton.styleFrom(
-                      padding: EdgeInsets.all(PaddingManager.padding16),
+                      padding: const EdgeInsets.all(PaddingManager.padding16),
                     ),
-                    onPressed: () {},
-                    child: Text(
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                        context,
+                        RouteName.KSignupScreen,
+                      );
+                    },
+                    child: const Text(
                       StringsManager.signUp,
                       style: TextStyle(color: ColorsManager.secondaryColor),
                     ),
                   ),
-                ],
-              ),
-            
+                ),
+              ],
+            ),
           ],
         ),
       ),

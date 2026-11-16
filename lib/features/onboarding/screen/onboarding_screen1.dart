@@ -3,7 +3,7 @@ import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
-import 'package:quick_kick/features/onboarding/widget/custom_widget_onboarding_screen1.dart';
+import 'package:quick_kick/features/onboarding/widgets/custom_widget_onboarding_screen1.dart';
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
   @override
