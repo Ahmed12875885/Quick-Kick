@@ -65,7 +65,12 @@ class SignupHeader extends StatelessWidget {
                       borderRadius: BorderRadius.circular(SizeManager.size15),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacementNamed(
+                      context,
+                      RouteName.KloginScreen,
+                    );
+                  },
                   child: const Text(
                     StringsManager.signUp,
                     style: TextStyle(color: ColorsManager.primaryColor),

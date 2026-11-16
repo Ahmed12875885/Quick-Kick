@@ -5,9 +5,10 @@ import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 
 class AuthButton extends StatelessWidget {
-  const AuthButton({required this.label, super.key});
+  const AuthButton({required this.label, this.onPressed, super.key});
 
   final String label;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class AuthButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(SizeManager.size15),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed ?? () {},
         child: Text(
           label,
           style: const TextStyle(

@@ -1,9 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
+import 'package:quick_kick/core/widgets/auth_button.dart';
 import 'package:quick_kick/core/widgets/social_login_section.dart';
 import 'package:quick_kick/features/sign_up/screen/signup_screen.dart';
 
 void main() {
+  testWidgets('main sign-up button replaces the screen with the Login route', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: const SignupScreen(),
+        routes: {
+          RouteName.KloginScreen: (_) =>
+              const Scaffold(body: Text('Login destination')),
+        },
+      ),
+    );
+
+    await tester.tap(
+      find.descendant(
+        of: find.byType(AuthButton),
+        matching: find.byType(TextButton),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    expect(find.text('Login destination'), findsOneWidget);
+    expect(find.byType(SignupScreen), findsNothing);
+  });
+
   testWidgets(
     'sign-up fields and social buttons remain reachable on a small screen',
     (tester) async {

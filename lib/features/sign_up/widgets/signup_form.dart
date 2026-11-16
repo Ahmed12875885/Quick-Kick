@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
@@ -40,7 +41,15 @@ class SignupForm extends StatelessWidget {
             isPassword: true,
           ),
           const SizedBox(height: VerticalManager.vertical8),
-          const AuthButton(label: StringsManager.signUp),
+          AuthButton(
+            label: StringsManager.signUp,
+            onPressed: () {
+              Navigator.pushReplacementNamed(
+                context,
+                RouteName.KloginScreen,
+              );
+            },
+          ),
           const SizedBox(height: VerticalManager.vertical8),
           const AuthOrDivider(),
           const SizedBox(height: VerticalManager.vertical8),
