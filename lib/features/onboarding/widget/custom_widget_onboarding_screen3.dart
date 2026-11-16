@@ -10,7 +10,6 @@ import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
 import 'package:quick_kick/core/resources/width_manager.dart';
-import 'package:quick_kick/features/login/screen/login_screen.dart';
 
 
 class CustomWidgetOnboardingScreen3 extends StatelessWidget {
@@ -41,7 +40,7 @@ class CustomWidgetOnboardingScreen3 extends StatelessWidget {
             textAlign: TextAlign.center,
             StringsManager.onboarding3Description1,
             style: TextStyle(
-              color: Colors.grey,
+              color: ColorsManager.greyColor,
               fontSize: FontManager.fontSize16,
             ),
           ),
@@ -52,10 +51,10 @@ class CustomWidgetOnboardingScreen3 extends StatelessWidget {
               Icon(
                 Icons.circle,
                 size: SizeManager.size10,
-                color: Colors.grey,
+                color: ColorsManager.greyColor,
               ),
               SizedBox(width: WidthManager.width4),
-              Icon(Icons.circle, size: SizeManager.size10, color: Colors.grey ),
+              Icon(Icons.circle, size: SizeManager.size10, color: ColorsManager.greyColor ),
               SizedBox(width: WidthManager.width4),
               Icon(Icons.circle, size: SizeManager.size10, color: ColorsManager.primaryColor),
             ],
@@ -77,7 +76,7 @@ class CustomWidgetOnboardingScreen3 extends StatelessWidget {
               child: Text(
                 StringsManager.onboardingNextButton,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: ColorsManager.secondaryColor,
                   fontSize: FontManager.fontSize18,
                 ),
               ),

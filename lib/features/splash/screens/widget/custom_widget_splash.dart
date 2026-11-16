@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/images_manager.dart';
@@ -22,7 +23,7 @@ const CustomWidgetSplash({super.key});
             style: TextStyle(
               fontSize: FontManager.fontSize30,
               fontWeight: FontWeight.bold,
-              color: Colors.white,
+              color: ColorsManager.secondaryColor,
             ),
           ),
         ],

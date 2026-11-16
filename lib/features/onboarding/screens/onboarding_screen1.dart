@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/features/onboarding/widget/custom_widget_onboarding_screen1.dart';
 class OnboardingScreen extends StatelessWidget {
@@ -10,15 +12,17 @@ class OnboardingScreen extends StatelessWidget {
       appBar: AppBar(
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, RouteName.KloginScreen);
+            },
             child: const Text(
               StringsManager.onboardingskip,
-              style: TextStyle(color: Colors.grey, fontSize: FontManager.fontSize18),
+              style: TextStyle(color: ColorsManager.greyColor, fontSize: FontManager.fontSize18),
             ),
           ),
         ],
       ),
-      body: const CustomWidgetOnboardingScreen1(),
+      body: const SingleChildScrollView(child: CustomWidgetOnboardingScreen1()),
     );
   }
 }

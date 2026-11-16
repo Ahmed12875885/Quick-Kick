@@ -9,5 +9,13 @@ class StringsManager {
   static const String onboarding2Description1 = 'Book your pitch quickly and never miss a \n chance to play';
   static const String onboarding3Title1 = "Enjoy The Game";
   static const String onboarding3Description1 = 'Play football with friends and enjoy \n every moment';
+  static const String helloThere = "Hello There";
+  static const String welcomeBack = "Welcome Back!";
+  static const String login = "Login";
+  static const String signUp = "Sign up";
+  static const String email = "Email";
+  static const String password = "Password";
+  static const String rememberMe = "Remember Me";
+  static const String forgetPassword = "Forget Password?";
 
 }

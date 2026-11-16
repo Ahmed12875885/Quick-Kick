@@ -41,7 +41,7 @@ class CustomWidgetOnboardingScreen1 extends StatelessWidget {
             textAlign: TextAlign.center,
             StringsManager.onboardingDescription1,
             style: TextStyle(
-              color: Colors.grey,
+              color: ColorsManager.greyColor,
               fontSize: FontManager.fontSize16,
             ),
           ),
@@ -55,9 +55,9 @@ class CustomWidgetOnboardingScreen1 extends StatelessWidget {
                 color: ColorsManager.primaryColor,
               ),
               SizedBox(width: WidthManager.width4),
-              Icon(Icons.circle, size: SizeManager.size10, color: Colors.grey),
+              Icon(Icons.circle, size: SizeManager.size10, color: ColorsManager.greyColor),
               SizedBox(width: WidthManager.width4),
-              Icon(Icons.circle, size: SizeManager.size10, color: Colors.grey),
+              Icon(Icons.circle, size: SizeManager.size10, color: ColorsManager.greyColor),
             ],
           ),
           SizedBox(height: HeightManager.height24),
@@ -77,7 +77,7 @@ class CustomWidgetOnboardingScreen1 extends StatelessWidget {
               child: Text(
                 StringsManager.onboardingNextButton,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: ColorsManager.secondaryColor,
                   fontSize: FontManager.fontSize18,
                 ),
               ),

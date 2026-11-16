@@ -16,7 +16,7 @@ class OnboardingScreen2 extends StatelessWidget {
           },
         ),
       ),
-      body: const CustomWidgetOnboardingScreen2(),
+      body: const SingleChildScrollView(child: CustomWidgetOnboardingScreen2()),
     );
   }
 }
