@@ -1,3 +1,6 @@
+import 'package:quick_kick/features/Forgetpassword/screen/forgetpassword_screen_email.dart';
+import 'package:quick_kick/features/Forgetpassword/screen/forgetpassword_screen_phone.dart';
+import 'package:quick_kick/features/Forgetpassword/screen/otp_screen.dart';
 import 'package:quick_kick/features/login/screen/login_screen.dart';
 import 'package:quick_kick/features/onboarding/screen/onboarding_screen1.dart';
 import 'package:quick_kick/features/onboarding/screen/onboarding_screen2.dart';
@@ -13,6 +16,9 @@ class RoutesManager {
     RouteName.KonboardingScreen3 :(context) => OnboardingScreen3(),
     RouteName.KloginScreen :(context) => LoginScreen(),
     RouteName.KSignupScreen: (context) => SignupScreen(),
+    RouteName.KForgetScreen1 : (context) => ForgetpasswordScreenEmail(),
+    RouteName.KForgetScreen2 : (context) => ForgetpasswordScreenPhone(),
+    RouteName.KotpScreen : (context) => OtpScreen(),
   };
 }
 class RouteName{
@@ -22,4 +28,7 @@ class RouteName{
   static const String KonboardingScreen3 = "KonboardingScreen3";
   static const String KloginScreen = "KloginScreen";
   static const String KSignupScreen = "KsignupScreen";
+  static const String KForgetScreen1 = "KforgetScreen1";
+  static const String KForgetScreen2 = "KforgetScreen2";
+  static const String KotpScreen = "KotpScreen2";
 }

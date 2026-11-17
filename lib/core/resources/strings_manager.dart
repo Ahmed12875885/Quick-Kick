@@ -21,7 +21,7 @@ class StringsManager {
   static const String email = "Email";
   static const String password = "Password";
   static const String confirmPassword = "Confirm Password";
-  static const String or = "OR";
+  static const String oR = "OR";
   static const String showPassword = "Show password";
   static const String hidePassword = "Hide password";
   static const String facebook = "Facebook";
@@ -29,4 +29,17 @@ class StringsManager {
   static const String apple = "Apple";
   static const String rememberMe = "Remember Me";
   static const String forgetPassword = "Forget Password?";
+  static const String forgetPasswordDescription =
+      "Enter your Email number and we'll help you reset \n your password";
+  static const String enteryouremail = "Enter your email";
+  static const String enteryourphone = "Enter your phone";
+  static const String or = "or";
+  static const String phone = "Phone";
+  static const String forgetPasswordDescription2 =
+      "Enter your phone number and we'll help you reset \n your password";
+  static const String enterotp = "Enter OTP";
+  static const String oTpDescription = "We sent you a 4-digit code please check \n your Email";
+  static const String verifyButton = "Verify";
+  static const String receiveCode = "Don’t receive code?";
+  static const String resendButton = "Resend OTP";
 }

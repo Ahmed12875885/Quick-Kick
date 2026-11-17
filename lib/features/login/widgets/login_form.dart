@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
+import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
@@ -63,7 +64,9 @@ class _LoginFormState extends State<LoginForm> {
                 style: TextStyle(color: ColorsManager.secondaryColor),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteName.KForgetScreen1);
+                },
                 child: const Text(
                   StringsManager.forgetPassword,
                   style: TextStyle(color: ColorsManager.secondaryColor),

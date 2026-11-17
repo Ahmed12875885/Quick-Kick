@@ -21,65 +21,67 @@ class SignupHeader extends StatelessWidget {
         color: ColorsManager.primaryColor,
         borderRadius: BorderRadius.circular(SizeManager.size10),
       ),
-      child: Column(
-        children: [
-          Text(
-            StringsManager.helloThere,
-            style: const TextStyle(color: ColorsManager.secondaryColor),
-          ),
-          const SizedBox(height: VerticalManager.vertical2),
-          Text(
-            StringsManager.createYourAccount,
-            style: const TextStyle(
-              color: ColorsManager.secondaryColor,
-              fontSize: FontManager.fontSize20,
-              fontWeight: FontWeight.bold,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Text(
+              StringsManager.helloThere,
+              style: const TextStyle(color: ColorsManager.secondaryColor),
             ),
-          ),
-          const SizedBox(height: VerticalManager.vertical10),
-          Row(
-            children: [
-              Expanded(
-                child: TextButton(
-                  style: TextButton.styleFrom(
-                    padding: const EdgeInsets.all(PaddingManager.padding16),
-                  ),
-                  onPressed: () {
-                    Navigator.pushReplacementNamed(
-                      context,
-                      RouteName.KloginScreen,
-                    );
-                  },
-                  child: const Text(
-                    StringsManager.login,
-                    style: TextStyle(color: ColorsManager.secondaryColor),
-                  ),
-                ),
+            const SizedBox(height: VerticalManager.vertical2),
+            Text(
+              StringsManager.createYourAccount,
+              style: const TextStyle(
+                color: ColorsManager.secondaryColor,
+                fontSize: FontManager.fontSize20,
+                fontWeight: FontWeight.bold,
               ),
-              Expanded(
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: ColorsManager.secondaryColor,
-                    minimumSize: const Size(0, HeightManager.height48),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(SizeManager.size15),
+            ),
+            const SizedBox(height: VerticalManager.vertical10),
+            Row(
+              children: [
+                Expanded(
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      padding: const EdgeInsets.all(PaddingManager.padding16),
+                    ),
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                        context,
+                        RouteName.KloginScreen,
+                      );
+                    },
+                    child: const Text(
+                      StringsManager.login,
+                      style: TextStyle(color: ColorsManager.secondaryColor),
                     ),
                   ),
-                  onPressed: () {
-                    Navigator.pushReplacementNamed(
-                      context,
-                      RouteName.KloginScreen,
-                    );
-                  },
-                  child: const Text(
-                    StringsManager.signUp,
-                    style: TextStyle(color: ColorsManager.primaryColor),
+                ),
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: ColorsManager.secondaryColor,
+                      minimumSize: const Size(0, HeightManager.height48),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(SizeManager.size15),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(
+                        context,
+                        RouteName.KloginScreen,
+                      );
+                    },
+                    child: const Text(
+                      StringsManager.signUp,
+                      style: TextStyle(color: ColorsManager.primaryColor),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
