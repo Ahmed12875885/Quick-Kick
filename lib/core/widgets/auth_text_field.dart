@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
@@ -11,7 +10,6 @@ class AuthTextField extends StatefulWidget {
     required this.hintText,
     this.isPassword = false,
     this.keyboardType,
-    super.key,
   });
 
   final String hintText;
@@ -50,9 +48,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
             : null,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(SizeManager.size15),
-          borderSide: BorderSide(
-            color: ColorsManager.transparentColor,
-          ),
+          borderSide: BorderSide(color: ColorsManager.primaryColor),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(SizeManager.size15),
@@ -64,9 +60,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
         filled: true,
         fillColor: ColorsManager.secondaryColor,
         hintText: widget.hintText,
-        hintStyle: TextStyle(
-          color: ColorsManager.greyColor,
-        ),
+        hintStyle: TextStyle(color: ColorsManager.greyColor),
         contentPadding: widget.isPassword
             ? null
             : EdgeInsets.all(PaddingManager.padding16),

@@ -92,6 +92,7 @@ class CustomWidgetForgetpassword extends StatelessWidget {
             SizedBox(height: HeightManager.height8),
             SizedBox(
               width: double.infinity,
+              height: HeightManager.height50,
               child: TextButton(
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.symmetric(

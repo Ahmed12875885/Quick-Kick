@@ -45,9 +45,14 @@ class _LoginFormState extends State<LoginForm> {
           ),
           const SizedBox(height: VerticalManager.vertical8),
           Row(
-            spacing: WidthManager.width4,
+            
             children: [
               Checkbox(
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+  visualDensity: const VisualDensity(
+    horizontal: -3,
+    vertical: -3,
+  ),
                 side: const BorderSide(color: ColorsManager.secondaryColor),
                 value: isRememberme,
                 activeColor: ColorsManager.secondaryColor,
@@ -59,10 +64,12 @@ class _LoginFormState extends State<LoginForm> {
                   });
                 },
               ),
+              
               const Text(
                 StringsManager.rememberMe,
                 style: TextStyle(color: ColorsManager.secondaryColor),
               ),
+              SizedBox(width: WidthManager.width35,),
               TextButton(
                 onPressed: () {
                   Navigator.pushNamed(context, RouteName.KForgetScreen1);

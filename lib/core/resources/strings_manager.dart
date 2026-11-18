@@ -42,4 +42,10 @@ class StringsManager {
   static const String verifyButton = "Verify";
   static const String receiveCode = "Don’t receive code?";
   static const String resendButton = "Resend OTP";
+  static const String resetnewpassword = "Reset new password";
+  static const String resetnewDescription = "Enter your new password below \n to reset your account. ";
+  static const String newpassword = "New Password";
+  static const String resetpasswordbutton = "Reset Password";
+  static const String receivecode = "Don’t receive code?";
+  static const String resendotp = "Resend OTP";
 }
