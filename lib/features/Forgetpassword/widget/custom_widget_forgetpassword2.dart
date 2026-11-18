@@ -9,6 +9,7 @@ import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
+import 'package:quick_kick/core/resources/width_manager.dart';
 
 class CustomWidgetForgetpassword2 extends StatelessWidget {
   const CustomWidgetForgetpassword2({super.key});
@@ -52,11 +53,15 @@ class CustomWidgetForgetpassword2 extends StatelessWidget {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(SizeManager.size15),
-                  borderSide: BorderSide(color: Colors.green),
+                  borderSide: BorderSide(
+                    width: WidthManager.width2,
+                    color: Colors.green),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(SizeManager.size15),
-                  borderSide: BorderSide(color: Colors.green),
+                  borderSide: BorderSide(
+                    
+                    color: Colors.green),
                 ),
               ),
             ),
