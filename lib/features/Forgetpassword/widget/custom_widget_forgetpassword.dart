@@ -6,10 +6,11 @@ import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
 
-import 'package:quick_kick/core/resources/size_manager.dart';
+
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
-import 'package:quick_kick/core/resources/width_manager.dart';
+
+import 'package:quick_kick/core/widgets/auth_text_field.dart';
 
 class CustomWidgetForgetpassword extends StatelessWidget {
   const CustomWidgetForgetpassword({super.key});
@@ -36,29 +37,8 @@ class CustomWidgetForgetpassword extends StatelessWidget {
               style: TextStyle(color: ColorsManager.greyColor),
             ),
             SizedBox(height: HeightManager.height8),
-            TextField(
-              keyboardType: TextInputType.emailAddress,
-              decoration: InputDecoration(
-                hint: Text(
-                  StringsManager.enteryouremail,
-                  style: TextStyle(color: ColorsManager.greyColor),
-                ),
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.green),
-                  borderRadius: BorderRadius.circular(SizeManager.size15),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(SizeManager.size15),
-                  borderSide: BorderSide(
-                    width: WidthManager.width2,
-                    color: Colors.green),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(SizeManager.size15),
-                  borderSide: BorderSide(color: Colors.green),
-                ),
-              ),
-            ),
+            AuthTextField(hintText: StringsManager.enteryouremail,),
+            
             SizedBox(height: HeightManager.height8),
             Row(
               mainAxisSize: MainAxisSize.min,
