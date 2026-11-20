@@ -5,13 +5,9 @@ import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
-
-
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
-
 import 'package:quick_kick/core/widgets/auth_text_field.dart';
-
 class CustomWidgetForgetpassword extends StatelessWidget {
   const CustomWidgetForgetpassword({super.key});
 
@@ -62,7 +58,7 @@ class CustomWidgetForgetpassword extends StatelessWidget {
                   onPressed: () async {
                     await Navigator.pushReplacementNamed(
                       context,
-                      RouteName.KForgetScreen2,
+                      RouteName.kForgetScreen2,
                     );
                   },
                   child: Text(
@@ -85,7 +81,7 @@ class CustomWidgetForgetpassword extends StatelessWidget {
                   side: BorderSide(color: ColorsManager.primaryColor),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteName.KotpScreen);
+                  Navigator.pushNamed(context, RouteName.kOtpScreen);
                 },
                 child: Text(
                   StringsManager.onboardingNextButton,

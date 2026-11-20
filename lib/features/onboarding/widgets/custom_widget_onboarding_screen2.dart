@@ -72,7 +72,7 @@ class CustomWidgetOnboardingScreen2 extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Navigator.pushNamed(context, RouteName.KonboardingScreen3);
+                Navigator.pushNamed(context, RouteName.kOnboardingScreen3);
               },
               child: Text(
                 StringsManager.onboardingNextButton,

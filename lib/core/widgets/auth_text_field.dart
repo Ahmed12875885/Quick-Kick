@@ -6,7 +6,7 @@ import 'package:quick_kick/core/resources/vertical_manager.dart';
 import 'package:quick_kick/core/resources/width_manager.dart';
 
 class AuthTextField extends StatefulWidget {
-  const AuthTextField({
+  const AuthTextField({super.key, 
     required this.hintText,
     this.isPassword = false,
     this.keyboardType,

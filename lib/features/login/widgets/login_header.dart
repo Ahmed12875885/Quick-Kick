@@ -64,7 +64,7 @@ class LoginHeader extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacementNamed(
                         context,
-                        RouteName.KSignupScreen,
+                        RouteName.kSignupScreen,
                       );
                     },
                     child: const Text(

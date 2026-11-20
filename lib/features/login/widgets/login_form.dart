@@ -45,14 +45,13 @@ class _LoginFormState extends State<LoginForm> {
           ),
           const SizedBox(height: VerticalManager.vertical8),
           Row(
-            
             children: [
               Checkbox(
                 materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-  visualDensity: const VisualDensity(
-    horizontal: -3,
-    vertical: -3,
-  ),
+                visualDensity: const VisualDensity(
+                  horizontal: -3,
+                  vertical: -3,
+                ),
                 side: const BorderSide(color: ColorsManager.secondaryColor),
                 value: isRememberme,
                 activeColor: ColorsManager.secondaryColor,
@@ -64,15 +63,15 @@ class _LoginFormState extends State<LoginForm> {
                   });
                 },
               ),
-              
+
               const Text(
                 StringsManager.rememberMe,
                 style: TextStyle(color: ColorsManager.secondaryColor),
               ),
-              SizedBox(width: WidthManager.width35,),
+              SizedBox(width: WidthManager.width35),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteName.KForgetScreen1);
+                  Navigator.pushNamed(context, RouteName.kForgetScreen1);
                 },
                 child: const Text(
                   StringsManager.forgetPassword,
@@ -82,7 +81,12 @@ class _LoginFormState extends State<LoginForm> {
             ],
           ),
           const SizedBox(height: VerticalManager.vertical8),
-          const AuthButton(label: StringsManager.login),
+          AuthButton(
+            label: StringsManager.login,
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, RouteName.kHomeScreen);
+            },
+          ),
           const SizedBox(height: VerticalManager.vertical8),
           const AuthOrDivider(),
           const SizedBox(height: VerticalManager.vertical8),

@@ -21,7 +21,7 @@ class ForgetpasswordScreenEmail extends StatelessWidget {
           onPressed: () async {
             await Navigator.pushReplacementNamed(
               context,
-              RouteName.KloginScreen,
+              RouteName.kLoginScreen,
             );
           },
           icon: Icon(Icons.arrow_back_ios_new),

@@ -20,7 +20,7 @@ class ForgetpasswordScreenPhone extends StatelessWidget {
           onPressed: () async {
             await Navigator.pushReplacementNamed(
               context,
-              RouteName.KForgetScreen1,
+              RouteName.kForgetScreen1,
             );
           },
           icon: Icon(Icons.arrow_back_ios_new),

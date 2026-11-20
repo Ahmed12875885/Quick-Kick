@@ -48,7 +48,7 @@ class CustomWidgetResetpassword extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushReplacementNamed(
                     context,
-                    RouteName.KloginScreen,
+                    RouteName.kLoginScreen,
                   );
                 },
               ),

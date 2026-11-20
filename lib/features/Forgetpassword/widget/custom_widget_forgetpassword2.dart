@@ -62,7 +62,7 @@ class CustomWidgetForgetpassword2 extends StatelessWidget {
                   onPressed: () async {
                     await Navigator.pushReplacementNamed(
                       context,
-                      RouteName.KForgetScreen1,
+                      RouteName.kForgetScreen1,
                     );
                   },
                   child: Text(
@@ -85,7 +85,7 @@ class CustomWidgetForgetpassword2 extends StatelessWidget {
                   side: BorderSide(color: ColorsManager.primaryColor),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteName.KotpScreen);
+                  Navigator.pushNamed(context, RouteName.kOtpScreen);
                 },
                 child: Text(
                   StringsManager.onboardingNextButton,

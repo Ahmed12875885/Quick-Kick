@@ -48,7 +48,7 @@ class SignupHeader extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacementNamed(
                         context,
-                        RouteName.KloginScreen,
+                        RouteName.kLoginScreen,
                       );
                     },
                     child: const Text(
@@ -69,7 +69,7 @@ class SignupHeader extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacementNamed(
                         context,
-                        RouteName.KloginScreen,
+                        RouteName.kLoginScreen,
                       );
                     },
                     child: const Text(

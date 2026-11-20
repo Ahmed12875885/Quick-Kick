@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future<void>.delayed(const Duration(seconds: 3));
     if (!mounted) return;
     Navigator.of(context).pushReplacementNamed<void, void>(
-      RouteName.KonboardingScreen,
+      RouteName.kOnboardingScreen,
     );
   }
   @override

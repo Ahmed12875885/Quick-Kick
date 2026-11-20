@@ -73,7 +73,7 @@ class CustomWidgetOnboardingScreen3 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamedAndRemoveUntil(
                   context,
-                  RouteName.KloginScreen,
+                  RouteName.kLoginScreen,
                   (route) => false,
                 );
               },

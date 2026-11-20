@@ -120,7 +120,7 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
                   side: BorderSide(color: ColorsManager.primaryColor),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteName.KresetpasswordScreen);
+                  Navigator.pushNamed(context, RouteName.kResetpasswordScreen);
                 },
                 child: Text(
                   StringsManager.onboardingNextButton,
