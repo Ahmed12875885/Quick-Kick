@@ -48,4 +48,23 @@ class StringsManager {
   static const String resetpasswordbutton = "Reset Password";
   static const String receivecode = "Don’t receive code?";
   static const String resendotp = "Resend OTP";
+  static const String googleIcon = 'G';
+  static const String home = "Home";
+  static const String map = "Map";
+  static const String notify = "Notify";
+  static const String calendar = "Calendar";
+  static const String drawerName = "Name";
+  static const String profile = "Profile";
+  static const String settings = "Settings";
+  static const String aboutAndSupport = "About&Support";
+  static const String welcomeBackHome = "Welcome back,";
+  static const String helloAhmed = "Hello,Ahmed ,\u{1F44B}";
+  static const String promoOff = "OFF";
+  static const String promoDiscount = "20%";
+  static const String promoTitle = "Your Next Booking!";
+  static const String promoDescription =
+      "Book within the next 2 hours and enjoy \n 20% off your next pitch booking.";
+  static const String bookNow = "Book Now";
+  static const String upcomingBooking = "Your Upcoming Booking";
+  static const String viewAll = "View all";
 }

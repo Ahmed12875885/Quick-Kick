@@ -49,8 +49,8 @@ class _LoginFormState extends State<LoginForm> {
               Checkbox(
                 materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                 visualDensity: const VisualDensity(
-                  horizontal: -3,
-                  vertical: -3,
+                  horizontal: SizeManager.sizeNegative3,
+                  vertical: SizeManager.sizeNegative3,
                 ),
                 side: const BorderSide(color: ColorsManager.secondaryColor),
                 value: isRememberme,

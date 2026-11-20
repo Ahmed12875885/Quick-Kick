@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/features/Forgetpassword/widget/custom_widget_resetpassword.dart';
 
 
@@ -15,8 +16,8 @@ class _ResetNewPasswordState extends State<ResetNewPassword> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        surfaceTintColor: Colors.transparent,
+        backgroundColor: ColorsManager.transparentColor,
+        surfaceTintColor: ColorsManager.transparentColor,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
         leading: IconButton(
           onPressed: () {

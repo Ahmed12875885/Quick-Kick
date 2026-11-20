@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 
 class SocialLoginSection extends StatelessWidget {
@@ -21,8 +22,11 @@ class SocialLoginSection extends StatelessWidget {
             tooltip: StringsManager.google,
             onPressed: () {},
             icon: const Text(
-              'G',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              StringsManager.googleIcon,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: FontManager.fontSize20,
+              ),
             ),
           ),
         IconButton(

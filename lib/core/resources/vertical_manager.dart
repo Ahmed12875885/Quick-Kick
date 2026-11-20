@@ -6,4 +6,5 @@ class VerticalManager {
   static const double vertical16 = 16.0;
   static const double vertical20 = 20.0;
   static const double vertical80 = 80.0;
+  static const double vertical0 = 0.0;
 }

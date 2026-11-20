@@ -16,7 +16,7 @@ class ForgetpasswordScreenEmail extends StatelessWidget {
         automaticallyImplyLeading: false,
         backgroundColor: ColorsManager.transparentColor,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        surfaceTintColor: Colors.transparent,
+        surfaceTintColor: ColorsManager.transparentColor,
         leading: IconButton(
           onPressed: () async {
             await Navigator.pushReplacementNamed(

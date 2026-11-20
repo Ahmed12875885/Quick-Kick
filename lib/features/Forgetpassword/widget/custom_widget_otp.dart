@@ -7,8 +7,10 @@ import 'package:quick_kick/core/resources/height_manager.dart';
 import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
+import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
+import 'package:quick_kick/core/resources/width_manager.dart';
 
 class CustomWidgetOtp extends StatefulWidget {
   const CustomWidgetOtp({super.key});
@@ -69,9 +71,11 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(4, (index) {
                 return Container(
-                  width: 42,
-                  height: 48,
-                  margin: const EdgeInsets.symmetric(horizontal: 5),
+                  width: WidthManager.width42,
+                  height: HeightManager.height48,
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: HorizontalManager.horizontal5,
+                  ),
                   child: TextField(
                     controller: controllers[index],
                     focusNode: focusNodes[index],
@@ -83,14 +87,16 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
                       counterText: '',
                       contentPadding: EdgeInsets.zero,
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(7),
-                        borderSide: const BorderSide(color: Colors.black),
+                        borderRadius: BorderRadius.circular(SizeManager.size7),
+                        borderSide: const BorderSide(
+                          color: ColorsManager.blackColor,
+                        ),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(7),
+                        borderRadius: BorderRadius.circular(SizeManager.size7),
                         borderSide: const BorderSide(
-                          color: Colors.green,
-                          width: 1.5,
+                          color: ColorsManager.primaryColor,
+                          width: WidthManager.width1_5,
                         ),
                       ),
                     ),

@@ -15,7 +15,7 @@ class ForgetpasswordScreenPhone extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: ColorsManager.transparentColor,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        surfaceTintColor: Colors.transparent,
+        surfaceTintColor: ColorsManager.transparentColor,
         leading: IconButton(
           onPressed: () async {
             await Navigator.pushReplacementNamed(
