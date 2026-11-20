@@ -67,4 +67,5 @@ class StringsManager {
   static const String bookNow = "Book Now";
   static const String upcomingBooking = "Your Upcoming Booking";
   static const String viewAll = "View all";
+  static const String logout = "Logout";
 }

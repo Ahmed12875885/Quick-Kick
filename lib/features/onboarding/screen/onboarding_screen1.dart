@@ -13,7 +13,7 @@ class OnboardingScreen extends StatelessWidget {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.pushNamed(context, RouteName.kLoginScreen);
+              Navigator.pushReplacementNamed(context, RouteName.kLoginScreen);
             },
             child: const Text(
               StringsManager.onboardingskip,
