@@ -133,12 +133,18 @@ class HomeContent extends StatelessWidget {
                       Text.rich(
                         TextSpan(
                           children: [
-                            TextSpan(text: booking.firstTeamName),
+                            TextSpan(
+                              text: booking.firstTeamName,
+                            ),
                             TextSpan(
                               text: StringsManager.bookingVersus,
-                              style: TextStyle(color: ColorsManager.greyColor),
+                              style: TextStyle(
+                                color: ColorsManager.greyColor,
+                              ),
                             ),
-                            TextSpan(text: booking.secondTeamName),
+                            TextSpan(
+                              text: booking.secondTeamName,
+                            ),
                           ],
                         ),
                         maxLines: 1,
@@ -202,8 +208,7 @@ class HomeContent extends StatelessWidget {
                                 vertical: VerticalManager.vertical2,
                               ),
                               decoration: BoxDecoration(
-                                color: ColorsManager
-                                    .bookingPaidStatusBackgroundColor,
+                                color: ColorsManager.bookingPaidStatusBackgroundColor,
                                 borderRadius: BorderRadius.circular(
                                   SizeManager.size15,
                                 ),
