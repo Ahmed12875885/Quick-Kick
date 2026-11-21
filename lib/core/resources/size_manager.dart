@@ -1,4 +1,5 @@
 class SizeManager {
+  static const double size12 = 12.0;
   static const double size10 = 10.0;
   static const double size15 = 15.0;
   static const double size60 = 60.0;

@@ -114,9 +114,11 @@ class StringsManager {
   static const String bookingTeamS = "Team S";
   static const String bookingTeamW = "Team W";
   static const String bookingTeamH = "Team H";
-  static const String bookingTeamJ = "Team J"; 
-  static const String popularNearYou  = "Popular Near You"; 
-  static const String showAll  = "Show all"; 
-  static const String stadiumName1  = "King Abdullah Sports City";
-  static const String stadiumName2  = "Al Nasr Club";
+  static const String bookingTeamJ = "Team J";
+  static const String popularNearYou = "Popular Near You";
+  static const String showAll = "Show all";
+  static const String stadiumName1 = "King Abdullah Sports City";
+  static const String stadiumName2 = "Al Nasr Club";
+  static const String stadiumPitch1 = "Pitch1";
+  static const String stadiumPitch2 = "Pitch2";
 }
