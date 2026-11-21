@@ -38,12 +38,14 @@ class StringsManager {
   static const String forgetPasswordDescription2 =
       "Enter your phone number and we'll help you reset \n your password";
   static const String enterotp = "Enter OTP";
-  static const String oTpDescription = "We sent you a 4-digit code please check \n your Email";
+  static const String oTpDescription =
+      "We sent you a 4-digit code please check \n your Email";
   static const String verifyButton = "Verify";
   static const String receiveCode = "Don’t receive code?";
   static const String resendButton = "Resend OTP";
   static const String resetnewpassword = "Reset new password";
-  static const String resetnewDescription = "Enter your new password below \n to reset your account. ";
+  static const String resetnewDescription =
+      "Enter your new password below \n to reset your account. ";
   static const String newpassword = "New Password";
   static const String resetpasswordbutton = "Reset Password";
   static const String receivecode = "Don’t receive code?";
@@ -68,4 +70,28 @@ class StringsManager {
   static const String upcomingBooking = "Your Upcoming Booking";
   static const String viewAll = "View all";
   static const String logout = "Logout";
+  static const String bookingConfirmed = "Booking Confirmed";
+  static const String bookingConfirmedDescription =
+      "Your pitch booking for today at 8:00 PM has \n been confirmed.";
+  static const String time = "5 min ago";
+  static const String notificationBookingConfirmedTitle = "Booking Confirmed";
+  static const String notificationBookingConfirmedDescription =
+      "Your pitch booking for today at 8:00 PM has been confirmed.";
+  static const String notificationBookingConfirmedTime = "5 min ago";
+  static const String notificationMatchReminderTitle = "Match Reminder";
+  static const String notificationMatchReminderDescription =
+      "Your match will start in 30 minutes. Get ready!";
+  static const String notificationMatchReminderTime = "1 hr ago";
+  static const String notificationPaymentSuccessfulTitle = "Payment Successful";
+  static const String notificationPaymentSuccessfulDescription =
+      "Your payment for the pitch booking was completed successfully.";
+  static const String notificationPaymentSuccessfulTime = "5 hr ago";
+  static const String notificationBookingCancelledTitle = "Booking Cancelled";
+  static const String notificationBookingCancelledDescription =
+      "Your booking for Friday at 7:00 PM has been cancelled";
+  static const String notificationBookingCancelledTime = "2 hr ago";
+  static const String notificationSpecialOfferTitle = "Special offer";
+  static const String notificationSpecialOfferDescription =
+      "Get 20% discount on booking this weekend";
+  static const String notificationSpecialOfferTime = "10 hr ago";
 }
