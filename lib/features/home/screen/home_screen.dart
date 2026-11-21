@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
         unselectedItemColor: ColorsManager.blackColor,
         selectedFontSize: FontManager.fontSize18,
         unselectedFontSize: FontManager.fontSize14,
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.w500),
+        selectedLabelStyle: TextStyle(fontWeight: FontManager.fontWeightW500),
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),

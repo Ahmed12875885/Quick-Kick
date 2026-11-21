@@ -48,8 +48,6 @@ class StringsManager {
       "Enter your new password below \n to reset your account. ";
   static const String newpassword = "New Password";
   static const String resetpasswordbutton = "Reset Password";
-  static const String receivecode = "Don’t receive code?";
-  static const String resendotp = "Resend OTP";
   static const String googleIcon = 'G';
   static const String home = "Home";
   static const String map = "Map";
@@ -59,6 +57,7 @@ class StringsManager {
   static const String profile = "Profile";
   static const String settings = "Settings";
   static const String aboutAndSupport = "About&Support";
+  static const String search = "Search";
   static const String welcomeBackHome = "Welcome back,";
   static const String helloAhmed = "Hello,Ahmed ,\u{1F44B}";
   static const String promoOff = "OFF";
@@ -70,10 +69,8 @@ class StringsManager {
   static const String upcomingBooking = "Your Upcoming Booking";
   static const String viewAll = "View all";
   static const String logout = "Logout";
-  static const String bookingConfirmed = "Booking Confirmed";
   static const String bookingConfirmedDescription =
       "Your pitch booking for today at 8:00 PM has \n been confirmed.";
-  static const String time = "5 min ago";
   static const String notificationBookingConfirmedTitle = "Booking Confirmed";
   static const String notificationBookingConfirmedDescription =
       "Your pitch booking for today at 8:00 PM has been confirmed.";
@@ -94,4 +91,27 @@ class StringsManager {
   static const String notificationSpecialOfferDescription =
       "Get 20% discount on booking this weekend";
   static const String notificationSpecialOfferTime = "10 hr ago";
+  static const String bookingPitch = "Pitch";
+  static const String bookingPaid = "Paid";
+  static const String bookingCancelled = "Cancelled";
+  static const String bookingVersus = "VS.";
+  static const String bookingHour = "hour";
+  static const String bookingHours = "hours";
+  static const String bookingPitchSeparator = " - ";
+  static const String bookingTodayAtEight = "Today, 8:00 PM";
+  static const String bookingFridayAtSeven = "Friday,April 7:00 PM";
+  static const String bookingSundayApril25AtEight = "Sunday,April 25, 8:00 PM";
+  static const String bookingStadiumAlNasrClub = "Al Nasr Club";
+  static const String bookingStadiumAlHilal = "Al Hilal stadium";
+  static const String bookingStadiumKingFahd = "King Fahd Stadium";
+  static const String bookingTeamA = "Team A";
+  static const String bookingTeamB = "Team B";
+  static const String bookingTeamG = "Team G";
+  static const String bookingTeamF = "Team F";
+  static const String bookingTeamR = "Team R";
+  static const String bookingTeamC = "Team C";
+  static const String bookingTeamS = "Team S";
+  static const String bookingTeamW = "Team W";
+  static const String bookingTeamH = "Team H";
+  static const String bookingTeamJ = "Team J";
 }

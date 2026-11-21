@@ -28,7 +28,7 @@ class CustomWidgetForgetpassword2 extends StatelessWidget {
               StringsManager.forgetPassword,
               style: TextStyle(
                 fontSize: FontManager.fontSize24,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
               ),
             ),
             SizedBox(height: HeightManager.height8),

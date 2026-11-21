@@ -7,6 +7,7 @@ import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
+import 'package:quick_kick/core/resources/width_manager.dart';
 
 class LoginHeader extends StatelessWidget {
   const LoginHeader({super.key});
@@ -34,7 +35,7 @@ class LoginHeader extends StatelessWidget {
               style: TextStyle(
                 color: ColorsManager.secondaryColor,
                 fontSize: FontManager.fontSize20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
               ),
             ),
             SizedBox(height: VerticalManager.vertical10),
@@ -44,7 +45,10 @@ class LoginHeader extends StatelessWidget {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: ColorsManager.secondaryColor,
-                      minimumSize: const Size(0, HeightManager.height48),
+                      minimumSize: const Size(
+                        WidthManager.width0,
+                        HeightManager.height48,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(SizeManager.size15),
                       ),

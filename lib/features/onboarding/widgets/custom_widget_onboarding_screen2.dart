@@ -33,7 +33,7 @@ class CustomWidgetOnboardingScreen2 extends StatelessWidget {
             StringsManager.onboarding2Title1,
             style: TextStyle(
               fontSize: FontManager.fontSize30,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontManager.fontWeightW600,
             ),
           ),
           SizedBox(height: HeightManager.height16),

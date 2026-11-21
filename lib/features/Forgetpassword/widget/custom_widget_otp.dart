@@ -53,7 +53,7 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
               StringsManager.enterotp,
               style: TextStyle(
                 fontSize: FontManager.fontSize24,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
               ),
             ),
 
@@ -139,7 +139,7 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  StringsManager.receivecode,
+                  StringsManager.receiveCode,
                   style: TextStyle(color: ColorsManager.greyColor),
                 ),
                 TextButton(
@@ -152,7 +152,7 @@ class _CustomWidgetOtpState extends State<CustomWidgetOtp> {
                   ),
                   onPressed: () {},
                   child: Text(
-                    StringsManager.resendotp,
+                    StringsManager.resendButton,
                     style: TextStyle(color: ColorsManager.primaryColor),
                   ),
                 ),

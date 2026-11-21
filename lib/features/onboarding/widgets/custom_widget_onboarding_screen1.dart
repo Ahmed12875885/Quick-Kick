@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
@@ -11,8 +10,6 @@ import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
 import 'package:quick_kick/core/resources/width_manager.dart';
-
-
 class CustomWidgetOnboardingScreen1 extends StatelessWidget {
   const CustomWidgetOnboardingScreen1({super.key});
   @override
@@ -33,7 +30,7 @@ class CustomWidgetOnboardingScreen1 extends StatelessWidget {
             StringsManager.onboardingTitle1,
             style: TextStyle(
               fontSize: FontManager.fontSize30,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontManager.fontWeightW600,
             ),
           ),
           SizedBox(height: HeightManager.height16),

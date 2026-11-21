@@ -7,6 +7,7 @@ import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
+import 'package:quick_kick/core/resources/width_manager.dart';
 
 class SignupHeader extends StatelessWidget {
   const SignupHeader({super.key});
@@ -34,7 +35,7 @@ class SignupHeader extends StatelessWidget {
               style: const TextStyle(
                 color: ColorsManager.secondaryColor,
                 fontSize: FontManager.fontSize20,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
               ),
             ),
             const SizedBox(height: VerticalManager.vertical10),
@@ -61,7 +62,10 @@ class SignupHeader extends StatelessWidget {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                       backgroundColor: ColorsManager.secondaryColor,
-                      minimumSize: const Size(0, HeightManager.height48),
+                      minimumSize: const Size(
+                        WidthManager.width0,
+                        HeightManager.height48,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(SizeManager.size15),
                       ),

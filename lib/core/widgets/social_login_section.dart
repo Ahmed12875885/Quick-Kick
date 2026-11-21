@@ -24,7 +24,7 @@ class SocialLoginSection extends StatelessWidget {
             icon: const Text(
               StringsManager.googleIcon,
               style: TextStyle(
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
                 fontSize: FontManager.fontSize20,
               ),
             ),

@@ -31,7 +31,7 @@ class HomeContent extends StatelessWidget {
                     StringsManager.helloAhmed,
                     style: TextStyle(
                       fontSize: FontManager.fontSize20,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontManager.fontWeightBold,
                     ),
                   ),
                 ],
@@ -46,7 +46,7 @@ class HomeContent extends StatelessWidget {
                     StringsManager.upcomingBooking,
                     style: TextStyle(
                       fontSize: FontManager.fontSize18,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontManager.fontWeightBold,
                     ),
                   ),
                   Row(
@@ -67,9 +67,9 @@ class HomeContent extends StatelessWidget {
               ),
               SizedBox(height: HeightManager.height16),
               Container(
-                color: Colors.amber,
+                color: ColorsManager.amberColor,
                 width: double.infinity,
-                height: 120,
+                height: HeightManager.height120,
               ),
               SizedBox(height: HeightManager.height16),
               Row(
@@ -79,7 +79,7 @@ class HomeContent extends StatelessWidget {
                     StringsManager.upcomingBooking,
                     style: TextStyle(
                       fontSize: FontManager.fontSize18,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontManager.fontWeightBold,
                     ),
                   ),
                   Row(

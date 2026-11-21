@@ -43,7 +43,7 @@ class HomePromoCard extends StatelessWidget {
                   style: TextStyle(
                     color: ColorsManager.secondaryColor,
                     fontSize: FontManager.fontSize18,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontManager.fontWeightBold,
                   ),
                 ),
                 Text(
@@ -51,7 +51,7 @@ class HomePromoCard extends StatelessWidget {
                   style: TextStyle(
                     color: ColorsManager.secondaryColor,
                     fontSize: FontManager.fontSize20,
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontManager.fontWeightBold,
                   ),
                 ),
               ],
@@ -61,7 +61,7 @@ class HomePromoCard extends StatelessWidget {
               style: TextStyle(
                 color: ColorsManager.secondaryColor,
                 fontSize: FontManager.fontSize18,
-                fontWeight: FontWeight.bold,
+                fontWeight: FontManager.fontWeightBold,
               ),
             ),
             Text(

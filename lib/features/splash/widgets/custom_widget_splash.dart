@@ -22,7 +22,7 @@ const CustomWidgetSplash({super.key});
             StringsManager.appName,
             style: TextStyle(
               fontSize: FontManager.fontSize30,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontManager.fontWeightBold,
               color: ColorsManager.secondaryColor,
             ),
           ),
