@@ -95,6 +95,7 @@ class StringsManager {
   static const String bookingPaid = "Paid";
   static const String bookingCancelled = "Cancelled";
   static const String bookingVersus = "VS.";
+  static const String bookingVersusShort = "Vs";
   static const String bookingHour = "hour";
   static const String bookingHours = "hours";
   static const String bookingPitchSeparator = " - ";
@@ -113,5 +114,9 @@ class StringsManager {
   static const String bookingTeamS = "Team S";
   static const String bookingTeamW = "Team W";
   static const String bookingTeamH = "Team H";
-  static const String bookingTeamJ = "Team J";
+  static const String bookingTeamJ = "Team J"; 
+  static const String popularNearYou  = "Popular Near You"; 
+  static const String showAll  = "Show all"; 
+  static const String stadiumName1  = "King Abdullah Sports City";
+  static const String stadiumName2  = "Al Nasr Club";
 }
