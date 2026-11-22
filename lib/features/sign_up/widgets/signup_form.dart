@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
+import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
@@ -23,6 +24,16 @@ class SignupForm extends StatelessWidget {
       decoration: BoxDecoration(
         color: ColorsManager.greyHalfOpacityColor,
         borderRadius: BorderRadius.circular(SizeManager.size15),
+        boxShadow: [
+          BoxShadow(
+            color: ColorsManager.cardShadowColor,
+            blurRadius: SizeManager.size10,
+            offset: const Offset(
+              HorizontalManager.horizontal0,
+              VerticalManager.vertical2,
+            ),
+          ),
+        ],
       ),
       child: Column(
         children: [

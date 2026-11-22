@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
+import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
 import 'package:quick_kick/core/resources/strings_manager.dart';
 import 'package:quick_kick/core/resources/vertical_manager.dart';
-import 'package:quick_kick/core/resources/width_manager.dart';
 import 'package:quick_kick/core/widgets/auth_button.dart';
 import 'package:quick_kick/core/widgets/auth_or_divider.dart';
 import 'package:quick_kick/core/widgets/auth_text_field.dart';
@@ -31,6 +31,16 @@ class _LoginFormState extends State<LoginForm> {
       decoration: BoxDecoration(
         color: ColorsManager.greyHalfOpacityColor,
         borderRadius: BorderRadius.circular(SizeManager.size15),
+        boxShadow: [
+          BoxShadow(
+            color: ColorsManager.cardShadowColor,
+            blurRadius: SizeManager.size10,
+            offset: const Offset(
+              HorizontalManager.horizontal0,
+              VerticalManager.vertical2,
+            ),
+          ),
+        ],
       ),
       child: Column(
         children: [
@@ -64,18 +74,21 @@ class _LoginFormState extends State<LoginForm> {
                 },
               ),
 
-              const Text(
-                StringsManager.rememberMe,
-                style: TextStyle(color: ColorsManager.secondaryColor),
-              ),
-              SizedBox(width: WidthManager.width35),
-              TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RouteName.kForgetScreen1);
-                },
-                child: const Text(
-                  StringsManager.forgetPassword,
+              const Expanded(
+                child: Text(
+                  StringsManager.rememberMe,
                   style: TextStyle(color: ColorsManager.secondaryColor),
+                ),
+              ),
+              Flexible(
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteName.kForgetScreen1);
+                  },
+                  child: const Text(
+                    StringsManager.forgetPassword,
+                    style: TextStyle(color: ColorsManager.secondaryColor),
+                  ),
                 ),
               ),
             ],

@@ -13,7 +13,7 @@ void main() {
       MaterialApp(
         home: const SignupScreen(),
         routes: {
-          RouteName.KloginScreen: (_) =>
+          RouteName.kLoginScreen: (_) =>
               const Scaffold(body: Text('Login destination')),
         },
       ),
@@ -46,7 +46,7 @@ void main() {
       final fields = find.byType(TextField);
       expect(fields, findsNWidgets(3));
       expect(find.text('Confirm Password'), findsOneWidget);
-      expect(find.text('OR'), findsOneWidget);
+      expect(find.text('or'), findsOneWidget);
       expect(
         find.descendant(
           of: find.byType(SocialLoginSection),

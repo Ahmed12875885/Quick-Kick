@@ -20,6 +20,16 @@ class HomePromoCard extends StatelessWidget {
       constraints: BoxConstraints(minHeight: HeightManager.height167),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(SizeManager.size10),
+        boxShadow: [
+          BoxShadow(
+            color: ColorsManager.cardShadowColor,
+            blurRadius: SizeManager.size10,
+            offset: const Offset(
+              HorizontalManager.horizontal0,
+              VerticalManager.vertical2,
+            ),
+          ),
+        ],
         gradient: LinearGradient(
           begin: AlignmentGeometry.topLeft,
           end: AlignmentGeometry.bottomRight,

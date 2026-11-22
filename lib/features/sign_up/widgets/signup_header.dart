@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quick_kick/core/resources/colors_manager.dart';
 import 'package:quick_kick/core/resources/font_manager.dart';
 import 'package:quick_kick/core/resources/height_manager.dart';
+import 'package:quick_kick/core/resources/horizontal_manager.dart';
 import 'package:quick_kick/core/resources/padding_manager.dart';
 import 'package:quick_kick/core/resources/routes_manager.dart';
 import 'package:quick_kick/core/resources/size_manager.dart';
@@ -21,6 +22,16 @@ class SignupHeader extends StatelessWidget {
       decoration: BoxDecoration(
         color: ColorsManager.primaryColor,
         borderRadius: BorderRadius.circular(SizeManager.size10),
+        boxShadow: [
+          BoxShadow(
+            color: ColorsManager.cardShadowColor,
+            blurRadius: SizeManager.size10,
+            offset: const Offset(
+              HorizontalManager.horizontal0,
+              VerticalManager.vertical2,
+            ),
+          ),
+        ],
       ),
       child: SingleChildScrollView(
         child: Column(

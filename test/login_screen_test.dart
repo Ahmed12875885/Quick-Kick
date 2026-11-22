@@ -26,7 +26,7 @@ void main() {
       expect(tester.takeException(), isNull);
       expect(find.byType(TextField), findsNWidgets(2));
       expect(find.byType(SocialLoginSection), findsOneWidget);
-      expect(find.byType(IconButton), findsNWidgets(5));
+      expect(find.byType(IconButton), findsNWidgets(4));
       final socialRow = find.descendant(
         of: find.byType(SocialLoginSection),
         matching: find.byType(Row),
