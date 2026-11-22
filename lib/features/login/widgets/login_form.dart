@@ -80,15 +80,13 @@ class _LoginFormState extends State<LoginForm> {
                   style: TextStyle(color: ColorsManager.secondaryColor),
                 ),
               ),
-              Flexible(
-                child: TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, RouteName.kForgetScreen1);
-                  },
-                  child: const Text(
-                    StringsManager.forgetPassword,
-                    style: TextStyle(color: ColorsManager.secondaryColor),
-                  ),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, RouteName.kForgetScreen1);
+                },
+                child: const Text(
+                  StringsManager.forgetPassword,
+                  style: TextStyle(color: ColorsManager.secondaryColor),
                 ),
               ),
             ],
